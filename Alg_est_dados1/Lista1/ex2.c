@@ -29,7 +29,8 @@ int main ()
     {
         case 1:
                 printf("\nDigite o nome que quer adicionar (Max 20 letras): ");
-                gets (nomeadd);
+                scanf("%s", &nomeadd);
+                getc(stdin);
                 allocadd=0;
                 strcat(nomeadd, "|");       //concatena com o caractere divisor
                 buff1=strlen(nomeadd);
@@ -38,11 +39,12 @@ int main ()
                 str=(char*)realloc(str, allocadd*sizeof(char)+sizeof(char));        //Dois sizeof por necessidade do \0 que indica o fim da string
                 strcat(str, nomeadd);
                 printf("%s", str);
-            goto INICIO;
+                goto INICIO;
         
         case 2:
             printf("Insira o nome que deseja remover(Max 20 letras): ");
-            gets(nomerm);
+            scanf("%s", &nomerm);
+            getc(stdin);
             strcat(nomerm, "|");
             teste = strstr(str, nomerm);
 
