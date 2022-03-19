@@ -1,6 +1,3 @@
-//Nome: Rafael de Mattia
-//Matrícula: 20200744
-//Graduação em ciência da computação, terceiro semeste, cadeira de algoritmos e estruturas de dados I
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -38,8 +35,8 @@ int main ()
                 allocadd=buff1+buff2;       //Coloco o tamanho da lista + a palavra, preparando para o realloc
                 str=(char*)realloc(str, allocadd*sizeof(char)+sizeof(char));        //Dois sizeof por necessidade do \0 que indica o fim da string
                 strcat(str, nomeadd);
-                printf("%s", str);
-                goto INICIO;
+               // printf("%s", str);
+            goto INICIO;
         
         case 2:
             printf("Insira o nome que deseja remover(Max 20 letras): ");
@@ -48,7 +45,7 @@ int main ()
             strcat(nomerm, "|");
             teste = strstr(str, nomerm);
 
-            if(teste != NULL)
+            if(teste !=  NULL)
             { 
                 tam = strlen(nomerm);
                 inicio_palavra = strstr(str, nomerm);
