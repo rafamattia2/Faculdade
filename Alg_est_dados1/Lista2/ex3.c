@@ -140,7 +140,6 @@ char *apagar(char *pBuffer)
 
     proximoIndice = indice + 1;
 
-    //a partir do indice, traz as informações um indice para trás, para poder diminuir o tamanho do buffer no final.
     while(proximoIndice < oTamLista)
     {
         pessoa = *(Agenda *)(pBuffer + sizeof(int) + (sizeof(Agenda) * proximoIndice));
