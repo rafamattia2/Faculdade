@@ -32,11 +32,11 @@ int main ()
                 scanf("%s", &nomeadd);
                 getc(stdin);
                 allocadd=0;
-                strcat(nomeadd, "|");       //concatena com o caractere divisor
+                strcat(nomeadd, "|");       //concatena com o caractere divisor.
                 buff1=strlen(nomeadd);
                 buff2=strlen(str);
-                allocadd=buff1+buff2;       //Coloco o tamanho da lista + a palavra, preparando para o realloc
-                str=(char*)realloc(str, allocadd*sizeof(char)+sizeof(char));        //Dois sizeof por necessidade do \0 que indica o fim da string
+                allocadd=buff1+buff2;       //Coloco o tamanho da lista + a palavra, preparando para o realloc.
+                str=(char*)realloc(str, allocadd*sizeof(char)+sizeof(char));        //Dois sizeof por necessidade do \0 que indica o fim da string.
                 strcat(str, nomeadd);
                 printf("%s", str);
                 goto INICIO;
