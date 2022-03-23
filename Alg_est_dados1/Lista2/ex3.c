@@ -71,13 +71,12 @@ int indicefunc(char *pBuffer, char *nome)
 
         if((strcmp(pessoa.nome, nome)) == 0)
         {
-            printf("\nOperacao realizada com sucesso!\n");
+            printf("\nOperacao realizada.\n");
             return indice;
         }
     }
 
-    //caso não caia em nenhuma condicao do loop acima
-    printf("\nNao foi possivel localizar o registro!\n");
+    printf("\nEste registro não existe\n");
     return -1;
 }
 
@@ -88,7 +87,7 @@ char *incluir(char *pBuffer)
     Agenda pessoa;
 
     printf("\n\tDigite as informações a seguir:\n");
-	printf("\nNome: \n");
+	printf("\nNome: ");
     scanf("%10s^\n", pessoa.nome);
     getc(stdin);
 
@@ -221,7 +220,6 @@ int menu(void)
 		printf("3. Buscar por nome\n");
 		printf("4. Listar registros\n");
 		printf("5. Sair\n");
-		printf("\nDigite sua escolha: ");
 		scanf("%d", &i);
 	} while (i <= 0 || i > 5);
 	getchar();
