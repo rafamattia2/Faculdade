@@ -100,7 +100,7 @@ char *incluir(char *pBuffer)
     scanf("%i", &pessoa.telefone);
     
     pBuffer = realloc(pBuffer, sizeof(int) + (sizeof(Agenda) * nTamLista));
-    if (!pBuffer)
+    if (pBuffer == NULL)
     {
         printf("Erro de alocacao!\n");
         return NULL;
