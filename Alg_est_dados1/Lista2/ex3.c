@@ -193,7 +193,7 @@ int listar(char *pBuffer)
         for(i = 0; i < TamLista; i++)
         {
             pessoa = *(Agenda *)(pBuffer + sizeof(int) + (sizeof(Agenda) * i));
-            printf("\nREGISTRO %i: \n", i + 1);
+            printf("\n Contato: %i \n", i + 1);
             printf("\nNome: %s", pessoa.nome);
             printf("\nIdade: %i", pessoa.idade);
             printf("\nTelefone: %i\n", pessoa.telefone);
