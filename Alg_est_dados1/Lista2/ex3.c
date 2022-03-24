@@ -25,7 +25,7 @@ int main()
     int selecaomenu;
 
     void *pBuffer = malloc(sizeof(int));
-    if (!pBuffer) 
+    if (pBuffer == NULL) 
     {
         printf("\nErro de alocacao!!!\n");
         return -1;
@@ -161,7 +161,7 @@ int buscar(char *pBuffer)
     char nome[10];
     Agenda pessoa;
 
-    printf("\n\tDigite o nome da pessoa que deseja buscar: ");
+    printf("\nDigite o nome da pessoa que deseja buscar: ");
     scanf("%10s^\n", nome);
     getc(stdin);
 
