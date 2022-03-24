@@ -172,7 +172,7 @@ int buscar(char *pBuffer)
     } else 
     {
         pessoa = *(Agenda *)(pBuffer + sizeof(int) + (sizeof(Agenda) * indice));
-        printf("\nREGISTRO %i: \n", indice + 1);
+        printf("\nCONTATO %i: \n", indice + 1);
         printf("\nNome: %s", pessoa.nome);
         printf("\nIdade: %i", pessoa.idade);
         printf("\nTelefone: %i\n", pessoa.telefone);
