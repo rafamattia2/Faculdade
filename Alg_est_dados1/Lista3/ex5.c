@@ -1,3 +1,6 @@
+//Nome: Rafael de Mattia
+//Matrícula: 20200744
+//Graduação em ciência da computação, terceiro semeste, cadeira de algoritmos e estruturas de dados I
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -37,7 +40,7 @@ int main(){
         case 2:
 			imprimeDados(buffer, tamanho);
             printf("\nPressione enter para sair\n");
-            while (enter != '\r' && enter != '\n') { enter = getchar(); }
+            while (enter != '\r' && enter != '\n') { enter = getchar(); } //codigo para pressionar enter e abortar o programa.
 			break;
         }
 	} while(m != 2);
@@ -48,7 +51,7 @@ int main(){
 
 Pessoa *adicionaPessoa(Pessoa *buffer, int tamanho)
 {
-    int tamanhoAntigo = tamanho-1;
+    int tamanhoAntigo = tamanho-1; //
     Pessoa pessoa;
     buffer = realloc(buffer, sizeof(Pessoa) * tamanho);
 
