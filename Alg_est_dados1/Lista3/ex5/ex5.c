@@ -18,6 +18,7 @@ int menu();
 
 int main(){
     int tamanho = 0, m=0;
+    char enter = 0;
     Pessoa *buffer = malloc(sizeof(int));
     
     if (buffer == NULL) 
@@ -28,7 +29,7 @@ int main(){
 
     do 
     {
-		char enter = 0;
+
         m = menu();
 		switch (m) 
         {
