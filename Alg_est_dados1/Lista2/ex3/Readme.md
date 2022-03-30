@@ -4,6 +4,7 @@ quantas pessoas o usuário desejar, porém, toda a informação
 incluída na agenda deve ficar num único lugar chamado: “void
 *pBuffer”.
 
+
 -Não pergunte para o usuário quantas pessoas ele vai incluir.
 Não pode alocar espaço para mais pessoas do que o
 necessário.
