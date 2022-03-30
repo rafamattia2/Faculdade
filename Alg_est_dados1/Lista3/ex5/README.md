@@ -1,12 +1,17 @@
-<h1 align="center"> Exercício 3</h1>
--Faça uma agenda capaz de incluir, apagar, buscar e listar
-quantas pessoas o usuário desejar, porém, toda a informação
-incluída na agenda deve ficar num único lugar chamado: “void
-*pBuffer”.
+# Exercício 5
+- Faça um programa que armazene a informação de várias
+pessoas.
 
+- O programa só deve sair quando o usuário disser que não
+deseja mais entrar com os dados de outra pessoa.
 
--Não pergunte para o usuário quantas pessoas ele vai incluir.
-Não pode alocar espaço para mais pessoas do que o
-necessário.
--Cada pessoa tem nome[10], idade e telefone.
--O trabalho que vale nota será uma continuação deste.
+- Antes de sair o programa deve apresentar, de forma
+organizada, os dados de todas as pessoas.
+
+Exemplo de struct:
+```
+typedef struct{
+    char nome[30];
+    int idade;
+    int altura;
+}Pessoa;
