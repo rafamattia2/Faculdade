@@ -8,6 +8,7 @@ Link para repositório no GitHub:
 Trabalho01
 | - README.md
 | - trabalho01.c
+| - results.txt
 
 ```
 
