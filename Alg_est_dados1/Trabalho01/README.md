@@ -1,6 +1,6 @@
 # Trabalho 1: AGENDA
 Nome: Rafael de Mattia || Matrícula 20200744 || E-mail: rdmattia@inf.ufpel.edu.br
-Link para repositório no GitHub: 
+Link para repositório no GitHub: https://github.com/rafamattia2/Faculdade/blob/e1968d818479d033a60169ed5136f1297c86f0cb/Alg_est_dados1/Trabalho01/trabalho01.c
 ---
 ## Estrutura de arquivos: 
 
