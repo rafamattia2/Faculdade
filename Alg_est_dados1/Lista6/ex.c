@@ -1,3 +1,7 @@
+//Nome: Rafael de Mattia
+//Matrícula: 20200744
+//Graduação em ciência da computação, terceiro semeste, cadeira de algoritmos e estruturas de dados I
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -225,8 +229,8 @@ int main ()
         {
             vetor[i] = rand()%1000;
         } 
-        //printf("\n##Vetor a ser ordenado:\n");
-        //imprimeVetor(vetor, tam);
+        printf("\n##Vetor a ser ordenado:\n");
+        imprimeVetor(vetor, tam);
             
         switch(opmenu)
         {
@@ -279,7 +283,7 @@ int main ()
                 test(vetor, tam - 1);
 
                 printf("\nMerge sort aplicado! Tempo de execucao: %.10f", tempExec);
-                //imprimeVetor(vetor, tam);
+                imprimeVetor(vetor, tam);
             
                 break;
 
@@ -300,7 +304,7 @@ int main ()
                     test(vetor, tam - 1);
 
                     printf("\nInsertion sort aplicado! Tempo de execucao: %.10f", tempExec);
-                    //imprimeVetor(vetor, tam);
+                    imprimeVetor(vetor, tam);
                     mediaInsert+=tempExec;
                 }
                 mediaInsert=mediaInsert/3;
@@ -320,7 +324,7 @@ int main ()
                     test(vetor, tam - 1);
 
                     printf("\nSelection sort aplicado! Tempo de execucao: %.10f", tempExec);
-                    //imprimeVetor(vetor, tam);
+                    imprimeVetor(vetor, tam);
                     mediaSelection+=tempExec;
                 }
 
@@ -341,7 +345,7 @@ int main ()
                     test(vetor, tam - 1);
 
                     printf("\nQuick sort aplicado! Tempo de execucao: %.20f", tempExec);
-                    //imprimeVetor(vetor, tam);
+                    imprimeVetor(vetor, tam);
                     mediaQuick+=tempExec;
                 }
                 mediaQuick=mediaQuick/3;
@@ -362,7 +366,7 @@ int main ()
                     test(vetor, tam - 1);
 
                     printf("\nMerge sort aplicado! Tempo de execucao: %.10f", tempExec);
-                    //imprimeVetor(vetor, tam);
+                    imprimeVetor(vetor, tam);
                     mediaMerge+=tempExec;
                 }
                 mediaMerge=mediaMerge/3;

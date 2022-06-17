@@ -69,19 +69,8 @@ int main()
                 break;
 
             case 5:
-                if (TAMANHO_LISTA != 0)
-                {
-                    return 0;
-                }
-
-                void *malloc_free = NULL;
-                while (INICIO != NULL)
-                {
-                    malloc_free = INICIO;
-                    INICIO = *(void **)(malloc_free + LINK_PROXIMO);
-                    free(malloc_free);
-                }
-                break;    
+                liberaMemoria(pBuffer, gerenciador);
+                break;
         }
 
     }while (*MENU_OP != 5);
@@ -253,9 +242,9 @@ int procuraCadastro(void *pBuffer, void *gerenciador)
     {
         if((strcmp(procurarCadastro, (char *)sentinela)) == 0)
         {
-            printf("\nNome: %s\nIdade: %i\nTelefone: %i\n\n", (char *)sentinela, 
-                                                           *(int *)(sentinela + NOME), 
-                                                           *(int *)(sentinela + NOME + IDADE));
+            printf("\nNome: %s\n", (char *)sentinela); 
+            printf("Idade: %i\n", *(int *)(sentinela + NOME));                                                    
+            printf("Telefone: %i \n", *(int *)(sentinela + NOME + IDADE));
             return 0;
         }
         else
@@ -280,8 +269,8 @@ int imprimeTodos(void *pBuffer, void *gerenciador)
     while (sentinela != NULL)
     {
         printf("\nNome: %s\n", (char *)sentinela); 
-        printf("Idade: %d\n", *(int *)(sentinela + NOME));                                                    
-        printf("Telefone: %d \n", *(int *)(sentinela + NOME + IDADE));
+        printf("Idade: %i\n", *(int *)(sentinela + NOME));                                                    
+        printf("Telefone: %i \n", *(int *)(sentinela + NOME + IDADE));
         sentinela = *(void **)(sentinela + LINK_PROXIMO);
     }
     return 0;
@@ -301,4 +290,19 @@ void menu(int *op)
 	} while (*op <= 0 || *op > 5);
     fflush(stdin);
 
+}
+
+int liberaMemoria(void *pBuffer, void *gerenciador)
+{
+    if (TAMANHO_LISTA == 0)
+    {
+        return 0;
+    }
+    void *malloc_free = NULL;
+    while (INICIO != NULL)
+    {
+        malloc_free = INICIO;
+        INICIO = *(void **)(malloc_free + LINK_PROXIMO);
+        free(malloc_free);
+    }
 }

@@ -52,7 +52,7 @@ int main(){
 
 Pessoa *adicionaPessoa(Pessoa *buffer, int tamanho)
 {
-    int tamanhoAntigo = tamanho-1; //
+    int tamanhoAntigo = tamanho-1;
     Pessoa pessoa;
     buffer = realloc(buffer, sizeof(Pessoa) * tamanho);
 

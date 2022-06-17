@@ -107,7 +107,7 @@ int *menu(void *pBuffer)
 
 	do 
     {
-		printf("\nAGENDA DE PESSOAS:\n\n");
+		printf("\nMENU\n");
 		printf("1) Adicionar cadastro\n");
 		printf("2) Listar registros\n");
 		printf("3) Sair\n");

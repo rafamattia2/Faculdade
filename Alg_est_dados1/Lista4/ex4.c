@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -355,7 +356,7 @@ int main ()
             
 
             for (i=0; i<opmax; i++)
-            {
+            {     
                 value=rand()%10000;
                 root = insert(root, value);
             }
@@ -370,7 +371,7 @@ int main ()
         case 5:
             printf("\nQual o nodo que deseja procurar?\n");
             scanf("%d", &value);
-            
+
             findAndPrint(root, value);
             break;
 
