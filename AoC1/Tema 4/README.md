@@ -1,19 +1,23 @@
-# Esta pasta é destinada a cadeira de Arquitetura e Organização de Computadores I
+## Trabalho 01:<p>
+Este programa em assembly é uma subrotina que retorne a média entre três valores. A subrotina
+recebe como argumentos três inteiros e retornar a média entre eles. O retorno da subrotina (média entre os três valores) é armazenado no registrador $t5.<p>
 
-- Nesta cadeira, foi trabalhado os seguintes pontos:
-1. Introdução à arquitetura e organização de computadores: projeto da organização e da arquitetura de um computador hipotético.
-Registradores, unidades funcionais, rede de interconexão, unidade de controle, formato de instruções, conjunto de instruções,
-modos de endereçamento.
-2. Programação em linguagem simbólica: relação entre organização, arquitetura e programação. Subrotinas e pilhas. Exercícios
-de programação em linguagem simbólica.
-3. Máquinas RISC e CISC: principais características, exemplo de arquitetura RISC: o MIPS reduzido.
-4. Organização do MIPS reduzido versão monociclo: componentes do bloco operativo e sua interconexão, esquema de temporização
-(relógio) e projeto do bloco de controle.
-5. Organização do MIPS reduzido versão multiciclo: componentes do bloco operativo e sua interconexão, esquema de temporização
-(relógio) e projeto do bloco de controle. Comparação entre a versão multiciclo e a versão monociclo.
-6. Organização do MIPS reduzido versão pipeline: introdução ao projeto com pipeline. Conflitos: tipos, exemplos e soluções. Bloco
-operativo pipeline. Capacidade de forwarding e mecanismos de previsão de desvios. Comparação entre a versão pipeline, a
-versão multiciclo e a versão monociclo.
-7. Medidas de desempenho: definição de desempenho e principais métricas
-----
+```
+Exemplo:
+Entrada    Saída
+51
+42
+39           44                           44 também deve ser armazenado em $t5
+```
 
+## Trabalho 02:<p>
+Este programa em assembly lê uma string de entrada e armazena na memória iniciando na posição 0x10010000. Ela transforma os caracteres maiúsculos de ums tring em minúsculos e vice versa, terminando a string em nulo. <p>
+
+Por exemplo, a entrada:
+```
+“ONE RING to rule Them aLL”
+```
+Deve produzir:
+```
+“one ring TO RULE tHEM All”.
+```
